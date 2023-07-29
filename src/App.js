@@ -9,6 +9,7 @@ import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
 import ExpenseItem from './components/ExpenseItem';
 import AllocationForm from './components/AllocationForm';
+import ChangeCurrency from './components/ChangeCurrency';
 
 // Add code to import the other components here under
 
@@ -19,18 +20,23 @@ const App = () => {
         <AppProvider>
             <div className='container'>
                 <h1 className='mt-3'>Company's Budget Allocation</h1>
-                    <div className='row mt-3'>
-                        {/* Add Budget component here under */}        
-                    <div className='col-sm'>
-                        <Budget />
-                    </div>
-                        {/* Add Remaining component here under */}        
-                    <div className='col-sm'>
-                        <Remaining />
+                <div className='row mt-3' style={{display:"flex", flexDirection:"column"}}>
+                    <div className='alerts-bar' style={{marginTop: "2em", display: "flex", flexDirection: 'row'}}>
+                            {/* Add Budget component here under */}        
+                        <div className='col-sm'>
+                            <Budget />
                         </div>
-                        {/* Add ExpenseTotal component here under */}        
-                    <div className='col-sm'>
-                        <ExpenseTotal />
+                            {/* Add Remaining component here under */}        
+                        <div className='col-sm'>
+                            <Remaining />
+                            </div>
+                            {/* Add ExpenseTotal component here under */}        
+                        <div className='col-sm'>
+                            <ExpenseTotal />
+                        </div>
+                        <div className='col-sm'>
+                            <ChangeCurrency />
+                        </div>
                     </div>
                         {/* Add ExpenseList component here under */}         
                     <div className='col-sm'>
