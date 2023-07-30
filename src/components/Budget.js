@@ -21,7 +21,7 @@ const Budget = () => {
             } 
     
     return (
-        <div className='alert alert-secondary' style={{display: 'flex', flexDirection: 'row', width: "200px", justifyContent: "center"}}>
+        <div className='alert alert-secondary' style={{width: "300px", height: "58px"}}>
             <label style={{width: '70px'}}>Budget:{currency[0]}</label>
             <input
             required='required'
@@ -30,7 +30,7 @@ const Budget = () => {
             step="10"
             id='budget'
             value={budget}
-            style={{ marginLeft: '0' , size: 10, width: "70px"}}
+            style={{ marginLeft: '0' , size: 10}}
             onChange={(event) => budgetChange(event)}>
             </input>
         </div>
